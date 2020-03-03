@@ -1,14 +1,14 @@
 /* Styles CV Olivier Barjon 2020 */
 
 
-/* ADAPTATION DE LA GRILLE AVEC LES MEDIA QUERIES */
+/* ADAPTATION GRILLE ET MEDIA QUERIES */
 
 /* Small devices */
 @media (max-width: 767.98px) { 
     .entete {
         flex-direction:column-reverse;
     }
-    .BoxLoisirSm {
+    .BoxLoisir {
         display:none;
     }
 }
@@ -18,5 +18,11 @@
     .footer {
         display:none;
     }
+}
 
+/* Large devices */
+@media (min-width:992px) {
+    .article--flex-direction{
+        display:flex;
+    }
 }

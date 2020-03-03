@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="fr">
+    
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- ouverture de la fenêtre du navigateur mobile à la largeur de l'écran du device - reinit zoom - pas de recadrage -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"> <!-- réglage ouverture fenêtre navigateur mobile à la largeur de l'écran du device - reinit zoom - pas de recadrage -->
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -12,6 +13,7 @@
     <link rel="stylesheet" href="styles.css">
     <meta http-equiv="X-UA-Compatible" content ="IE=edge"> <!-- moteur de rendu edge pou IE - attention W3C !!! -->
   </head>
+    
   <body>
       
     <div class="container"> <!-- BOX Bootstrap -->
@@ -21,9 +23,9 @@
             <div class="col-12 col-sm-12 col-md-8" id="titre">titre</div>
         </header>
 
-        <section class="row"> <!-- contenus -->
+        <section class="row"> <!-- Corps du CV -->
 
-            <aside class="col-12 col-sm-12 col-md-4 d-flex flex-column">
+            <aside class="col-12 col-sm-12 col-md-4 d-flex flex-column"> <!-- CV Aside -->
                 <div>
                     <div>Contact</div>
                     <div>Infos contact</div>
@@ -32,9 +34,9 @@
                     <div>A propos</div>
                     <div>Texte</div>
                 </div>
-                <div class="BoxLoisirSm mt-auto">
+                <div class="BoxLoisir mt-auto">
                     <div>Loisirs</div>
-                    <div>
+                    <div class="d-flex flex-row justify-content-center">
                         <div>loisir numéro 1</div>
                         <div>loisir numéro 2</div>
                         <div>loisir numéro 3</div>
@@ -43,46 +45,48 @@
             </aside>
              
 
-            <article class="col-12 col-sm-12 col-md-8">
+            <article class="col-12 col-sm-12 col-md-8"> <!-- CV zone centrale -->
 
                 <div id="formation">
                     <div id="formationTitre">formation</div>
-
+                    <div class="article--flex-direction">
                     <div id="formationDate1">date</div>
                     <div id="formationTxt1">Txt formation</div>
-
+                    </div>
+                    <div class="article--flex-direction">
                     <div id="formationDate2">date</div>
                     <div id="formationTxt2">Txt formation</div>
+                    </div>
                 </div>
 
                 <div id="experience">
                     <div id="experienceTitre">experience</div>
-
+                    <div class="article--flex-direction">
                     <div id="experienceDate1">date</div>
                     <div id="experienceTxt1">Txt experience</div>
-
+                    </div>
+                    <div class="article--flex-direction">
                     <div id="experienceDate2">date</div>
                     <div id="experienceTxt2">Txt experience</div>
+                    </div>
                 </div>
 
                 <div id="recommandations">
                     <div id="recommandationsTitre">recommandations</div>
-
-                    <div id="experienceDate1">date</div>
-                    <div id="experienceTxt1">Txt recommandation</div>
-
-                    <div id="experienceDate2">date</div>
-                    <div id="experienceTxt2">Txt recommandation</div>
+                    <div class="article--flex-direction">
+                    <div id="recoTxt1">Txt recommandation</div>
+                    <div id="recoTxt2">Txt recommandation</div>
+                    </div>
                 </div>
 
             </article>
 
         </section>
         
-        <footer class="footer">
+        <footer class="footer"> <!-- CV aside pour les petits écrans -->
             
             <div>Loisirs</div>
-            <div>
+            <div class="d-flex flex-row justify-content-center">
                 <div>loisir numéro 1</div>
                 <div>loisir numéro 2</div>
                 <div>loisir numéro 3</div>
@@ -91,8 +95,7 @@
         </footer>
 
     </div> <!-- FIN BOX Bootstrap -->   
-      
-      
     
   </body>
+    
 </html>
