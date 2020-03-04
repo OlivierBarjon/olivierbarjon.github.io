@@ -26,3 +26,27 @@
         display:flex;
     }
 }
+
+/* STYLES GRAPHIQUES */
+
+/* Couleurs : Material design color - Amber 500 #FFC107 */
+/*                                  - Grey 800 #424242  */
+/*                                  - Grey 900 #212121  */
+/*                                  - Grey #FAFAFA */
+
+
+/*Application des couleurs de fond aux blocks */
+.aside--colorAmber,.header--photo--colorAmber {
+    background-color: #FFC107;
+}
+
+.header--titre--colorGrey,.article--contenu--colorGrey {
+    background-color: #FAFAFA;
+}
+.aside--titre--colorGrey {
+    background-color: #212121;
+}
+
+/* Police principale : Montserrat */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+/* font-family: 'Montserrat', sans-serif;  */
