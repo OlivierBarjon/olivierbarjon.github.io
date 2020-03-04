@@ -1,4 +1,10 @@
-/* Styles CV Olivier Barjon 2020 */
+/* Styles CV Olivier Barjon 2020                   */
+
+/*SOMMAIRE                                         */
+/*   ADAPTATION GRILLE ET MEDIA QUERIES            */
+/*   COULEURS                                      */
+/*   STYLES DES TEXTES                             */
+
 
 /* ADAPTATION GRILLE ET MEDIA QUERIES */
 
@@ -31,7 +37,7 @@
     }
 }
 
-/* STYLES GRAPHIQUES */
+/* COULEURS */
 
 /* Couleurs : Material design color - Amber 500 #FFC107 */
 /*                                  - Grey 800 #424242  */
@@ -40,17 +46,46 @@
 
 
 /*Application des couleurs de fond aux blocks */
-.aside--colorAmber,.header--photo--colorAmber {
+.aside--colorAmber,.header--photoBg--colorAmber {
     background-color: #FFC107;
 }
 
-.header--titre--colorGrey,.article--contenu--colorGrey {
+.header--titreBg--colorGrey,.article--contenuBg--colorGrey {
     background-color: #FAFAFA;
 }
-.aside--titre--colorGrey {
+.aside--titreBg--colorGrey900 {
     background-color: #212121;
 }
 
-/* Police principale : Montserrat */
-@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
-/* font-family: 'Montserrat', sans-serif;  */
+/* STYLES DES TEXTES */
+
+/* POLICE : Montserrat */
+/* FONTS : Thin 100 (font-weight: 100)*/
+/*         Regular 400 (font-weight: 400)*/
+/*         Semi-bold 600 (font-weight: 600) */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
+
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform:uppercase;
+    font-weight: 100;
+    color: #212121;
+}
+
+.header--titre--colorAmber {
+    font-weight: 400;
+    color: #FFC107;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform:uppercase;
+    font-weight: 600;
+    color: #212121;
+}
+
+.aside--titre--colorAmber {
+    color: #FFC107;
+}
