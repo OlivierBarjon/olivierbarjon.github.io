@@ -1,12 +1,12 @@
 /* Styles CV Olivier Barjon 2020                   */
 
-/*SOMMAIRE                                         */
-/*   ADAPTATION GRILLE ET MEDIA QUERIES            */
+/* SOMMAIRE                                        */
+/*   SPECIFICITES MEDIA QUERIES                    */
 /*   COULEURS                                      */
 /*   STYLES DES TEXTES                             */
 
 
-/* ADAPTATION GRILLE ET MEDIA QUERIES */
+/* ########### SPECIFICITES MEDIA QUERIES ############### */
 
 /* Small devices */
 @media (max-width: 767.98px) { 
@@ -16,10 +16,13 @@
     .BoxLoisir {
         display:none;
     }
-    /* La règle suivante permet d'éviter l'utilisation d'une .d-flex qui rendrait la section footer visible sur tous les devices */
+    /* La règle suivante permet d'éviter l'utilisation d'une classe .d-flex qui rendrait la section footer visible sur tous les devices */
     .footer { 
         display:flex;
         flex-direction:column;
+    }
+    .header__background--colorAmber {
+        background-color: #FAFAFA; 
     }
 }
 
@@ -27,6 +30,9 @@
 @media (min-width: 767.99px) { 
     .footer {
         display:none;
+    }
+    .header__background--colorAmber {
+        background-color: #FFC107; 
     }
 }
 
@@ -37,7 +43,7 @@
     }
 }
 
-/* COULEURS */
+/* ################# COULEURS ################### */
 
 /* Couleurs : Material design color - Amber 500 #FFC107 */
 /*                                  - Grey 800 #424242  */
@@ -46,18 +52,18 @@
 
 
 /*Application des couleurs de fond aux blocks */
-.aside--colorAmber,.header--photoBg--colorAmber {
+.aside__background--colorAmber {
     background-color: #FFC107;
 }
 
-.header--titreBg--colorGrey,.article--contenuBg--colorGrey {
+.header__background--colorGrey,.article__background--colorGrey {
     background-color: #FAFAFA;
 }
-.aside--titreBg--colorGrey900 {
+.aside__background--colorGrey900 {
     background-color: #212121;
 }
 
-/* STYLES DES TEXTES */
+/* ############### STYLES DES TEXTES ################ */
 
 /* POLICE : Montserrat */
 /* FONTS : Thin 100 (font-weight: 100)*/
@@ -74,7 +80,7 @@ h1 {
     color: #212121;
 }
 
-.header--titre--colorAmber {
+.header__titre--colorAmber {
     font-weight: 400;
     color: #FFC107;
 }
@@ -86,6 +92,6 @@ h2 {
     color: #212121;
 }
 
-.aside--titre--colorAmber {
+.aside__titre--colorAmber {
     color: #FFC107;
 }
