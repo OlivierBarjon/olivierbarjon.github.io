@@ -1,6 +1,5 @@
 /* Styles CV Olivier Barjon 2020 */
 
-
 /* ADAPTATION GRILLE ET MEDIA QUERIES */
 
 /* Small devices */
@@ -10,6 +9,11 @@
     }
     .BoxLoisir {
         display:none;
+    }
+    /* La règle suivante permet d'éviter l'utilisation d'une .d-flex qui rendrait la section footer visible sur tous les devices */
+    .footer { 
+        display:flex;
+        flex-direction:column;
     }
 }
 
