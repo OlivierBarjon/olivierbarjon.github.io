@@ -63,6 +63,9 @@
     h1 {
         font-size: 5rem;
     }
+    .article__content--width65{
+        width: 65%;
+    }
 }
 
 /* ################# COULEURS ################### */
@@ -113,6 +116,7 @@ p {
     font-size: 1.5rem;
     color: #424242;
     line-height: normal;
+    text-align: justify; 
 }
 
 h1 + p {
@@ -152,7 +156,7 @@ h3 {
 /* ################### MEDIA ##################### */
 
 
-    header div img{
+header div img{
     display:block;
     width: 60%;
     margin: 1rem auto 1rem auto;
