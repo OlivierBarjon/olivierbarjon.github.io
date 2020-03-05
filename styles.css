@@ -4,9 +4,11 @@
 /*   SPECIFICITES MEDIA QUERIES                    */
 /*   COULEURS                                      */
 /*   STYLES DES TEXTES                             */
+/*   BLOCKS                                        */
 
 
 /* ########### SPECIFICITES MEDIA QUERIES ############### */
+
 
 /* Small devices */
 @media (max-width: 767.98px) { 
@@ -30,15 +32,15 @@
 }
     h1 {
         font-size: 3rem;
-    }
-    p {
-        font-size: 1.3rem;  
-    }
-    
+    }  
 }
 
 /* Medium devices */
 @media (min-width: 767.99px) { 
+    body {
+    max-width:900px;
+    margin:auto;
+    }
     .footer {
         display:none;
     }
@@ -50,10 +52,7 @@
     }
     h1 {
         font-size: 3.7rem;
-    }
-    p {
-        font-size: 1.7rem;  
-    }
+    } 
 }
 
 /* Large devices */
@@ -63,9 +62,6 @@
     }
     h1 {
         font-size: 5rem;
-    }
-    p {
-        font-size: 2.3rem;  
     }
 }
 
@@ -88,6 +84,7 @@
 .aside__background--colorGrey900 {
     background-color: #212121;
 }
+
 
 /* ###############  TEXTES ################ */
 
@@ -113,7 +110,9 @@ h1 {
 p {
     font-family: 'Montserrat', sans-serif;
     font-weight: 100;
+    font-size: 1.5rem;
     color: #424242;
+    line-height: normal;
 }
 
 h1 + p {
@@ -125,6 +124,15 @@ h2 {
     font-family: 'Montserrat', sans-serif;
     text-transform:uppercase;
     font-weight: 600;
+    font-size: 2rem;
+    color: #212121;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    text-transform:uppercase;
+    font-weight: 600;
+    font-size: 1.7rem;
     color: #212121;
 }
 
@@ -149,4 +157,7 @@ h2 {
     width: 60%;
     margin: 1rem auto 1rem auto;
 }
+
+/* ################ BLOCKS ###################  */
+
 
