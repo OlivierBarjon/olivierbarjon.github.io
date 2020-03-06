@@ -218,6 +218,9 @@ li{
     margin-left: 1.7rem;
 }
 
+.mb-6 {
+    margin-bottom: 6rem; /* Ajout d'une règle sur modèle Bootstrap */
+}
 
 
 /* ################### ELEMENTS GRAPHIQUES ##################### */
