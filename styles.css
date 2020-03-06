@@ -140,6 +140,17 @@ h3 {
     color: #212121;
 }
 
+ul {
+    list-style-type:none; 
+    text-align: center; 
+    padding-left: 0px;
+}
+
+li{
+    display:inline;
+    margin:1rem;
+}
+
 .header__titre--colorAmber {
     font-weight: 400;
     color: #FFC107;
@@ -152,6 +163,30 @@ h3 {
 .header__titre--underline {
     border-bottom: 2px #FFC107 solid;
 }
+
+.article__titreH2--underline {
+    border-bottom: 2px #FFC107 solid;
+}
+
+.article__iconeTitre--color-Size {
+    font-size: 2.5rem; 
+    color: #FFC107;
+}
+
+.article__iconeDate--color-Size {
+    font-size: 1rem; 
+    color: #FFC107;
+}
+
+.aside__iconesLoisirs--color-size {
+    font-size: 5rem;
+    color: #212121;
+    border: 3px #212121 solid;
+    border-radius:50%;
+    padding:7px;
+}
+
+
 
 /* ################### MEDIA ##################### */
 
