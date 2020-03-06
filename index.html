@@ -18,7 +18,7 @@
       
     <div class="container border border-dark"> <!-- BOX Bootstrap -->
 
-        <header class="row entete align-items-center"> <!-- En tête -->
+        <header class="row entete align-items-center"> <!-- En tête du CV -->
             <div class="col-sm-12 col-md-4 header__background--colorAmber">
                 <img class="header__photo--border rounded-circle mb-5 mt-5" src="images/Photo-Olivier-Barjon.jpg" alt="Photo : Olivier Barjon">
             </div>
@@ -33,7 +33,9 @@
             <aside class="col-sm-12 col-md-4 d-flex flex-column aside__background--colorAmber px-0"> <!-- CV Aside -->
                 
                 <div>
-                    <div class="aside--titre--colorGrey aside__background--colorGrey900"><h2 class="aside__titre--colorAmber ml-4">Contact</h2></div>
+                    <div class="aside--titre--colorGrey aside__background--colorGrey900">
+                        <h2 class="aside__titre--colorAmber ml-4">Contact</h2>
+                    </div>
                     <div class="ml-4 mt-4 mb-4">
                         <p>Adresse <br />Houlgate, France</p>
                         <p>Téléphone <br /> 06 51 82 18 56</p>
@@ -43,14 +45,18 @@
                 </div>
                 
                 <div>
-                    <div class="aside--titre--colorGrey aside__background--colorGrey900"><h2 class="aside__titre--colorAmber ml-4">A propos</h2></div>
+                    <div class="aside--titre--colorGrey aside__background--colorGrey900">
+                        <h2 class="aside__titre--colorAmber ml-4">A propos</h2>
+                    </div>
                     <div class="ml-4 mr-4 mt-4">
-                     <p>Après de longues années à travailler dans le secteur de l'informatique et du tourisme...</p>
+                        <p>Après de longues années à travailler dans le secteur de l'informatique et du tourisme...</p>
                     </div>
                 </div>
                 
                 <div class="BoxLoisir mt-auto">
-                    <div class="aside--titre--colorGrey aside__background--colorGrey900"><h2 class="aside__titre--colorAmber ml-4">Loisirs</h2></div>
+                    <div class="aside--titre--colorGrey aside__background--colorGrey900">
+                        <h2 class="aside__titre--colorAmber ml-4">Loisirs</h2>
+                    </div>
                     <ul>
                         <li><span class="fas fa-camera aside__iconesLoisirs--color-size"></span></li>
                         <li><span class="fas fa-book-open aside__iconesLoisirs--color-size"></span></li>
@@ -64,10 +70,15 @@
             <article class="col-sm-12 col-md-8 article__background--colorGrey"> <!-- CV zone centrale -->
 
                 <div class="ml-4 mr-4">
-                    <div class ="article__titreH2--underline"><h2><i class="fas fa-graduation-cap article__iconeTitre--color-Size"></i> formation</h2></div>
+                    
+                    <div class ="article__titreH2--underline">
+                        <h2><i class="fas fa-graduation-cap article__iconeTitre--color-Size"></i> formation</h2>
+                    </div>
                     
                     <div class="article--flex-direction justify-content-between">
-                        <div id="formationDate1"><p><i class="far fa-dot-circle article__iconeDate--color-Size"></i>2020 <br />Paris</p></div>
+                        <div>
+                            <p><i class="far fa-dot-circle article__iconeDot--color-Size"></i>2020 <br /><span class="article__lieuDot--align">Paris</span></p>
+                        </div>
                         <div id="formationTxt1" class="article__content--width65">
                             <h3>OPENCLASSROOMS</h3>
                             <p>Formation développeur Web</p>
@@ -76,7 +87,9 @@
                     </div>
                     
                     <div class="article--flex-direction justify-content-between">
-                        <div id="formationDate2"><p><i class="fas fa-circle article__iconeDate--color-Size"></i>1999<br />Paris</p></div>
+                        <div id="formationDate2">
+                            <p><i class="fas fa-circle article__iconeCircle--color-Size"></i>1999 <br /><span class="article__lieuCircle--align">Paris</span></p>
+                        </div>
                         <div id="formationTxt2" class="article__content--width65">
                             <h3>UNIVERSITE ASSAS PARIS II - PARIS VIII</h3>
                             <p>Double cursus universitaire général</p>
@@ -87,46 +100,58 @@
                 </div>
 
                 <div class="ml-4 mr-4">
-                    <div class ="article__titreH2--underline"><h2><i class="fas fa-briefcase article__iconeTitre--color-Size"></i> experience</h2></div>
                     
-                    <div class="article--flex-direction justify-content-between">
-                    <div id="experienceDate1"><p>2012 à 2018<br />Caen</p></div>
-                    <div id="experienceTxt1" class="article__content--width65">
-                       <h3>Webmaster</h3>
-                        <p>CALVADOS ATTRACTIVITE</p>
-                        <p>Pilotage des sites internet et conception des campagnes e-mailing
-                        marketing automation. Web analyse et SEO content management.
-                        Coordination des prestataires partenaires. Administration du SI et des
-                        CMS. Réalisation des supports de communication Print. Déploiement
-                        des outils CRM auprès des offices de tourisme et supervision de
-                        projets annexes.</p>
-                    </div>
+                    <div class ="article__titreH2--underline">
+                        <h2><i class="fas fa-briefcase article__iconeTitre--color-Size"></i> experience</h2>
                     </div>
                     
                     <div class="article--flex-direction justify-content-between">
-                    <div id="experienceDate2"><p>2009 à 2012<br />Région Roannaise</p></div>
-                    <div id="experienceTxt2" class="article__content--width65">
-                        <h3>Graphiste web/print</h3>
-                        <p>FREELANCE</p>
-                        <p>Conception d'outils de communication sur mesure. PAO, Webdesign,
-                        intégration web et déploiement en ligne.</p>
-                    </div>
+                        <div id="experienceDate1">
+                            <p><i class="far fa-dot-circle article__iconeDot--color-Size"></i>2012 à 2018<br /><span class="article__lieuDot--align">Caen</span></p>
+                        </div>
+                        <div id="experienceTxt1" class="article__content--width65">
+                            <h3>Webmaster</h3>
+                            <p>CALVADOS ATTRACTIVITE</p>
+                            <p>Pilotage des sites internet et conception des campagnes e-mailing
+                            marketing automation. Web analyse et SEO content management.
+                            Coordination des prestataires partenaires. Administration du SI et des
+                            CMS. Réalisation des supports de communication Print. Déploiement
+                            des outils CRM auprès des offices de tourisme et supervision de
+                            projets annexes.</p>
+                        </div>
                     </div>
                     
                     <div class="article--flex-direction justify-content-between">
-                    <div id="experienceDate2"><p>2003 à 2009<br />Région Lyonnaise</p></div>
-                    <div id="experienceTxt2" class="article__content--width65">
-                        <h3>Technicien informatique</h3>
-                        <p>NEUF CEGETEL, STERIA</p>
-                        <p>Diagnostic et résolution de problèmes bureautiques et réseaux : MS Office,
-                        Windows Serveur, Citrix, systèmes d'impression, Voip, ADSL...</p>
+                        <div id="experienceDate2">
+                            <p><i class="fas fa-circle article__iconeCircle--color-Size"></i>2009 à 2012<br /><span class="article__lieuCircle--align">Région Roannaise</span></p>
+                        </div>
+                        <div id="experienceTxt2" class="article__content--width65">
+                            <h3>Graphiste web/print</h3>
+                            <p>FREELANCE</p>
+                            <p>Conception d'outils de communication sur mesure. PAO, Webdesign,
+                            intégration web et déploiement en ligne.</p>
+                        </div>
                     </div>
+                    
+                    <div class="article--flex-direction justify-content-between">
+                        <div id="experienceDate2">
+                            <p><i class="fas fa-circle article__iconeCircle--color-Size"></i>2003 à 2009<br /><span class="article__lieuCircle--align">Région Lyonnaise</span></p>
+                        </div>
+                        <div id="experienceTxt2" class="article__content--width65">
+                            <h3>Technicien informatique</h3>
+                            <p>NEUF CEGETEL, STERIA</p>
+                            <p>Diagnostic et résolution de problèmes bureautiques et réseaux : MS Office,
+                            Windows Serveur, Citrix, systèmes d'impression, Voip, ADSL...</p>
+                        </div>
                     </div>
                     
                 </div>
 
                 <div class="ml-4 mr-4">
-                    <div class ="article__titreH2--underline"><h2><i class="fas fa-pencil-alt article__iconeTitre--color-Size"></i> recommandations</h2></div>
+                    
+                    <div class ="article__titreH2--underline">
+                        <h2><i class="fas fa-pencil-alt article__iconeTitre--color-Size"></i> recommandations</h2>
+                    </div>
                     
                     <div class="article--flex-direction justify-content-between">
                         
@@ -141,6 +166,7 @@
                         </div>
                         
                     </div>
+                    
                 </div>
 
             </article>
@@ -149,7 +175,9 @@
         
         <footer class="row footer aside__background--colorAmber"> <!-- CV aside pour les petits écrans -->
             
-            <div class="aside__background--colorGrey900"><h2 class="aside__titre--colorAmber ml-4 mx-4">Loisirs</h2></div>
+            <div class="aside__background--colorGrey900">
+                <h2 class="aside__titre--colorAmber ml-4 mx-4">Loisirs</h2>
+            </div>
            
             <ul>
                     <li><span class="fas fa-camera aside__iconesLoisirs--color-size"></span></li>
@@ -159,8 +187,10 @@
             
         </footer>
 
-    </div> <!-- FIN BOX Bootstrap -->   
-  <script src="https://kit.fontawesome.com/f3dcf27040.js" crossorigin="anonymous"></script>  
+    </div> <!-- FIN BOX Bootstrap -->  
+      
+  <script src="https://kit.fontawesome.com/f3dcf27040.js" crossorigin="anonymous"></script><!-- Script Fontawesome -->
+      
   </body>
     
 </html>

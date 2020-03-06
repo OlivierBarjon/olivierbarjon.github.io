@@ -2,73 +2,89 @@
 
 /* SOMMAIRE                                        */
 /*   SPECIFICITES MEDIA QUERIES                    */
-/*   COULEURS                                      */
-/*   STYLES DES TEXTES                             */
-/*   BLOCKS                                        */
-
+/*   COULEURS DE FONDS                             */
+/*   TEXTES ET ALIGNEMENTS                         */
+/*   ELEMENTS GRAPHIQUES                           */
 
 /* ########### SPECIFICITES MEDIA QUERIES ############### */
 
 
 /* Small devices */
 @media (max-width: 767.98px) { 
+    
     .entete {
         flex-direction:column-reverse;
         margin-top: 2rem;
     }
+    
+    h1 {
+        font-size: 3rem;
+    }
+    
     .BoxLoisir {
         display:none;
     }
+    
+    .header__background--colorAmber {
+        background-color: #FAFAFA; 
+    }
+    
+    .header__photo--border {
+        border: 5px RGBa(255, 193, 7, 0.4) solid;
+    }
+    
     /* La règle suivante permet d'éviter l'utilisation d'une classe .d-flex qui rendrait la section footer visible sur tous les devices */
     .footer { 
         display:flex;
         flex-direction:column;
-    }
-    .header__background--colorAmber {
-        background-color: #FAFAFA; 
-    }
-    .header__photo--border {
-        border: 5px RGBa(255, 193, 7, 0.4) solid;
-}
-    h1 {
-        font-size: 3rem;
-    }  
+    }    
+    
 }
 
 /* Medium devices */
 @media (min-width: 767.99px) { 
+    
     body {
     max-width:900px;
     margin:auto;
     }
-    .footer {
-        display:none;
-    }
-    .header__background--colorAmber {
-        background-color: #FFC107; 
-    }
-    .header__photo--border {
-    border: 5px RGBa(33, 33, 33, 0.3) solid;
-    }
+    
     h1 {
         font-size: 3.7rem;
     } 
+    
+    .header__background--colorAmber {
+        background-color: #FFC107; 
+    }
+    
+    .header__photo--border {
+    border: 5px RGBa(33, 33, 33, 0.3) solid;
+    }
+    
+    .footer {
+        display:none;
+    }
+    
 }
 
 /* Large devices */
 @media (min-width:992px) {
-    .article--flex-direction{
-        display:flex;
-    }
+    
     h1 {
         font-size: 5rem;
     }
+    
+    .article--flex-direction{
+        display:flex;
+    }
+   
     .article__content--width65{
         width: 65%;
     }
+     
 }
 
-/* ################# COULEURS ################### */
+/* ################# COULEURS DE FONDS ################### */
 
 /* Couleurs : Material design color - Amber 500 #FFC107 */
 /*                                  - Grey 800 #424242  */
@@ -76,20 +92,20 @@
 /*                                  - Grey #FAFAFA */
 
 
-/*Application des couleurs de fond aux blocks */
-.aside__background--colorAmber {
-    background-color: #FFC107;
-}
-
-.header__background--colorGrey,.article__background--colorGrey, body {
+body,.header__background--colorGrey,.article__background--colorGrey {
     background-color: #FAFAFA;
 }
+
 .aside__background--colorGrey900 {
     background-color: #212121;
 }
 
+.aside__background--colorAmber {
+    background-color: #FFC107;
+}
 
-/* ###############  TEXTES ################ */
+
+/* ###############  TEXTES ET ALIGNEMENTS ################ */
 
 /* POLICE : Montserrat */
 /* FONTS : Thin 100 (font-weight: 100)*/
@@ -119,7 +135,7 @@ p {
     text-align: justify; 
 }
 
-h1 + p {
+h1 + p { /* sous-titre */
     font-weight: 600;
     margin-top: -11px;
 }
@@ -156,25 +172,11 @@ li{
     color: #FFC107;
 }
 
-.aside__titre--colorAmber {
-    color: #FFC107;
-}
-
 .header__titre--underline {
     border-bottom: 2px #FFC107 solid;
 }
 
-.article__titreH2--underline {
-    border-bottom: 2px #FFC107 solid;
-}
-
-.article__iconeTitre--color-Size {
-    font-size: 2.5rem; 
-    color: #FFC107;
-}
-
-.article__iconeDate--color-Size {
-    font-size: 1rem; 
+.aside__titre--colorAmber {
     color: #FFC107;
 }
 
@@ -186,9 +188,39 @@ li{
     padding:7px;
 }
 
+.article__titreH2--underline {
+    border-bottom: 2px #FFC107 solid;
+}
+
+.article__iconeTitre--color-Size {
+    font-size: 2.5rem; 
+    color: #FFC107;
+}
+
+.article__iconeDot--color-Size {
+    font-size: 1.5rem; 
+    color: #FFC107;
+    margin-right: 1rem;
+}
+
+.article__iconeCircle--color-Size {
+    font-size: 0.9rem; 
+    color: #FFC107;
+    margin-right: 1rem;
+    margin-bottom: 0.2rem;
+}
+
+.article__lieuDot--align {
+    margin-left: 2.3rem;
+}
+
+.article__lieuCircle--align {
+    margin-left: 1.7rem;
+}
 
 
-/* ################### MEDIA ##################### */
+
+/* ################### ELEMENTS GRAPHIQUES ##################### */
 
 
 header div img{
@@ -197,6 +229,5 @@ header div img{
     margin: 1rem auto 1rem auto;
 }
 
-/* ################ BLOCKS ###################  */
 
 
