@@ -109,10 +109,9 @@ body,.header__background--colorGrey,.article__background--colorGrey {
 
 /* POLICE : Montserrat */
 /* FONTS : Thin 100 (font-weight: 100)*/
-/*         Regular 400 (font-weight: 400)*/
 /*         Semi-bold 600 (font-weight: 600) */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap');
 
 
 html {
@@ -132,12 +131,12 @@ p {
     font-size: 1.5rem;
     color: #424242;
     line-height: normal;
-    text-align: justify; 
+    text-align: left; 
 }
 
 h1 + p { /* sous-titre */
     font-weight: 600;
-    margin-top: -11px;
+    margin-top: -1rem;
 }
 
 h2 {
@@ -156,6 +155,16 @@ h3 {
     color: #212121;
 }
 
+.p-justify {
+    text-align:justify;
+}
+
+.h2-align-center {
+    text-align:center;
+    height: 3.5rem; /*xxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+    padding-top:0.7rem;
+}
+
 ul {
     list-style-type:none; 
     text-align: center; 
@@ -168,7 +177,7 @@ li{
 }
 
 .header__titre--colorAmber {
-    font-weight: 400;
+    font-weight: 100;
     color: #FFC107;
 }
 
@@ -195,6 +204,7 @@ li{
 .article__iconeTitre--color-Size {
     font-size: 2.5rem; 
     color: #FFC107;
+    padding-right: 1em;
 }
 
 .article__iconeDot--color-Size {
