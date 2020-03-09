@@ -111,7 +111,6 @@ body,.header__background--colorGrey,.article__background--colorGrey {
 /* FONTS : Thin 100 (font-weight: 100)*/
 /*         Semi-bold 600 (font-weight: 600) */
 
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;600&display=swap');
 
 
 html {
@@ -127,7 +126,7 @@ h1 {
 
 p {
     font-family: 'Montserrat', sans-serif;
-    font-weight: 100;
+    font-weight: 400;
     font-size: 1.5rem;
     color: #424242;
     line-height: normal;
@@ -182,7 +181,7 @@ li{
 }
 
 .header__titre--colorAmber {
-    font-weight: 100;
+    font-weight: 500;
     color: #FFC107;
 }
 
