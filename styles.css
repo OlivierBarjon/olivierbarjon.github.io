@@ -155,6 +155,11 @@ h3 {
     color: #212121;
 }
 
+a, a:hover, a:active, a:visited {
+    text-decoration: none;
+    color: #424242;
+}
+
 .p-justify {
     text-align:justify;
 }
