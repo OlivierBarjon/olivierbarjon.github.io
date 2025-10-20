@@ -1,2 +1,2 @@
 # cv
-Curriculum Vitae développeur web freelance - Olivier Barjon
+Curriculum Vitae Webmaster - Olivier Barjon
