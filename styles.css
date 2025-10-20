@@ -1,4 +1,4 @@
-/* Styles CV Olivier Barjon 2020                   */
+/* Styles CV Olivier Barjon 2025                  */
 
 /* SOMMAIRE                                        */
 /*   SPECIFICITES MEDIA QUERIES                    */
@@ -112,6 +112,11 @@ body,.header__background--colorGrey,.article__background--colorGrey {
 /*         Semi-bold 600 (font-weight: 600) */
 
 
+a {
+    text-decoration: none;
+    color: #212121;
+    font-weight: bolder;
+}
 
 html {
     font-size: 62.5%; /* modifie la taille de base de sorte qu'1 rem = 10px */
